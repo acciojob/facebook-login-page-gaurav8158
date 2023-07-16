@@ -1,1 +1,77 @@
 /*  your css code here. If applicable */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+	display:flex;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.logo {
+  margin-bottom: 20px;
+		flex:40%;
+}
+
+.logo img {
+  width:200px;
+
+}
+
+form {
+  text-align: center;	
+}
+.right{	
+	padding:5px;
+	padding-top:20px;
+	border-radius:10px;
+		flex:40%;
+	display:flex;
+	flex-direction:column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		background-color:#fff;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 95%;
+  padding: 10px;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.forgot-link {
+  display: block;
+  margin-top: 10px;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.create-account {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.create-account a {
+  color: #1877f2;
+  text-decoration: none;
+}
+.line{
+	color:black;
+	background-color:black;
+	height:1px;
+}
