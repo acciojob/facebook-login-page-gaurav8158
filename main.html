@@ -1,33 +1,135 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <title>Facebook Login Form</title>
+    <style type="text/css">
+      body {
+        background-color: #f6f6f6;
+        text-align: center;
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+      }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+      .left {
+        width: 450px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 70px;
+      }
 
-<body>
-	<!-- the entire body must be written by student -->
-	  <div class="container">
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/1024px-Facebook_Logo_%282019%29.svg.png" alt="Facebook Logo">
-      <p>Facebook helps you connect and share with the people in your life</p>
+      .form {
+        display: inline-block;
+
+        width: 300px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #ccc;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      img {
+        display: block;
+      }
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-control {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .btn-primary {
+        background-color: #1877f2;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        width: 100%;
+      }
+
+      .btn-primary:hover {
+        background-color: #135da8;
+      }
+
+      a {
+        color: #1877f2;
+        text-decoration: none;
+      }
+
+      .signup {
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #42b72a;
+      }
+      .left img {
+        margin-left: -30px;
+      }
+      .left h2 {
+        font-weight: 200;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left">
+      <img
+        src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+        alt="Facebook logo"
+        width="300px"
+      />
+      <h2 class="_8eso">
+        Facebook helps you connect and share with the people in your life.
+      </h2>
     </div>
-		  <div class="right">
-		    <form>
-      <input type="text" placeholder="Email or Phone Number">
-      <input type="password" placeholder="Password">
-      <button type="submit">Log in</button>
-      <a href="#" class="forgot-link">Forgotten account?</a>
-    </form>
-			  <p class=line ></p>
-  <button class="new">Create new account</button>  
-		  </div>
 
-  </div>
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+    <div class="form">
+      <form action="/reg/">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Email address or phone number"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          style="margin-bottom: 10px"
+        >
+          Log in
+        </button>
+        <a href="/recover/initiate">Forgotten account?</a>
+        <hr />
+        <button class="signup">Create new account</button>
+      </form>
+    </div>
+  </body>
 </html>
