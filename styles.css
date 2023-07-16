@@ -75,3 +75,13 @@ button[type="submit"] {
 	background-color:black;
 	height:1px;
 }
+
+.new{
+	margin:auto;
+	  color: #fff;
+  border: none;
+  border-radius: 4px;
+	 background-color: #4CAF50;
+	 width: 60%;
+  padding: 10px;
+}
